@@ -1,0 +1,123 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+    //google services for firebase Authentication
+    id 'com.google.gms.google-services'
+    //to use safe args
+    id 'androidx.navigation.safeargs'
+}
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.udacity.project4" //"com.example.locationreminderapp"
+        minSdk 25
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
+    testOptions.unitTests {
+        includeAndroidResources = true
+        returnDefaultValues = true
+    }
+    buildTypes {
+        debug {
+            testCoverageEnabled true
+        }
+    }
+}
+
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.8.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    //dependency for room database
+    implementation "androidx.room:room-ktx:2.4.3"
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    debugImplementation 'androidx.test:rules:1.4.0'
+    androidTestImplementation project(path: ':app')
+    kapt "androidx.room:room-compiler:2.4.3"
+    //dependency for navigation graphs
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.2'
+    //dependency for using safeArgs
+    //implementation 'androidx.navigation:navigation-safe-args-gradle-plugin:2.5.2'
+    //dependency for using coroutines in testing
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4"
+    //to use google play services for maps
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    //to use google play services for location
+    implementation 'com.google.android.gms:play-services-location:20.0.0'
+    // Dependencies for Android instrumented unit tests to test fragments
+    debugImplementation "androidx.fragment:fragment-testing:1.5.3"
+    //for using by viewModels in fragments
+    debugImplementation "androidx.fragment:fragment-ktx:1.5.3"
+    debugImplementation "androidx.test:core:1.4.0"
+
+    implementation "com.google.android.gms:play-services-auth:20.3.0"
+    implementation 'com.firebaseui:firebase-ui-auth:8.0.1'
+    //added to prevent pending intent error
+    implementation 'androidx.work:work-runtime-ktx:2.7.1'
+    implementation "io.insert-koin:koin-android:3.2.2"
+    implementation 'androidx.compose.runtime:runtime:1.2.1'
+    //dependency to use .map
+    //implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.5.1"
+    //to add idlying file to make background tasks take their time
+    implementation "androidx.test.espresso:espresso-idling-resource:3.4.0"
+
+    // Testing
+    testImplementation 'io.insert-koin:koin-test:3.2.2'
+    testImplementation "io.insert-koin:koin-test-junit4:3.2.0-beta-1"
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.1'
+    testImplementation "androidx.arch.core:core-testing:2.1.0"
+    testImplementation 'com.android.support.test:runner:1.0.2'
+    debugImplementation 'androidx.test:runner:1.4.0'
+    //dependency for using assertThat
+    //testImplementation 'org.hamcrest:hamcrest-library:2.2'
+    //dependencies to use mockito for accessing application from test file and running fragment
+    testImplementation 'org.mockito:mockito-core:3.10.0'
+    //androidTestImplementation 'org.mockito:mockito-android:3.10.0'
+    androidTestImplementation "com.linkedin.dexmaker:dexmaker-mockito:2.28.1"
+    androidTestImplementation "androidx.arch.core:core-testing:2.1.0"
+    testImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4'
+    //to use coroutines in test classes
+    testImplementation "org.robolectric:robolectric:4.8.2"
+
+    //for testing maps
+    androidTestImplementation 'com.android.support.test.uiautomator:uiautomator-v18:2.1.3'
+
+    //testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4"
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.3.0'
+}

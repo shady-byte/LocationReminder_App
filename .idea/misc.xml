@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LocationReminderApp/app/src/main/res/drawable/ic_google_icon.xml" value="0.104" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LocationReminderApp/app/src/main/res/drawable/ic_mail_icon.xml" value="0.104" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LocationReminderApp/app/src/main/res/drawable/no_data_icon.xml" value="0.104" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LocationReminderApp/app/src/main/res/layout/activity_main.xml" value="0.165625" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LocationReminderApp/app/src/main/res/layout/activity_reminder_details.xml" value="0.1796875" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LocationReminderApp/app/src/main/res/layout/activity_reminder_info.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LocationReminderApp/app/src/main/res/layout/activity_reminders.xml" value="0.1796875" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LocationReminderApp/app/src/main/res/layout/content_reminders.xml" value="0.1796875" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LocationReminderApp/app/src/main/res/layout/fragment_first.xml" value="0.1796875" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LocationReminderApp/app/src/main/res/layout/fragment_home.xml" value="0.1796875" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LocationReminderApp/app/src/main/res/layout/fragment_maps.xml" value="0.1796875" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LocationReminderApp/app/src/main/res/layout/fragment_reminder_detail.xml" value="0.165625" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LocationReminderApp/app/src/main/res/layout/fragment_reminder_details.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LocationReminderApp/app/src/main/res/layout/fragment_reminder_list.xml" value="0.165625" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LocationReminderApp/app/src/main/res/layout/fragment_reminders_list.xml" value="0.1796875" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LocationReminderApp/app/src/main/res/layout/fragment_second.xml" value="0.1796875" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LocationReminderApp/app/src/main/res/layout/fragment_sign_in.xml" value="0.1796875" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LocationReminderApp/app/src/main/res/layout/fragment_sign_up.xml" value="0.1796875" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LocationReminderApp/app/src/main/res/layout/reminder_item_layout.xml" value="0.17864583333333334" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LocationReminderApp/app/src/main/res/menu/home_menu.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LocationReminderApp/app/src/main/res/menu/maps_menu.xml" value="0.1796875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

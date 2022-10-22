@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.udacity.project4.ui.ReminderInfoActivityViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/notification_reminder_title_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:ems="10"
+            android:focusable="false"
+            android:clickable="false"
+            android:text="@={viewModel.reminderTitle}"
+            android:layout_marginBottom="30dp"
+            android:inputType="textPersonName"
+            android:hint="@string/reminder_title_hint"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/notification_reminder_description_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:ems="10"
+            android:focusable="false"
+            android:clickable="false"
+            android:text="@={viewModel.reminderDescription}"
+            android:layout_marginBottom="30dp"
+            android:lines="5"
+            android:maxLines="5"
+            android:inputType="textPersonName"
+            android:hint="@string/reminder_description_hint"
+            android:importantForAutofill="no" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/notification_location_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:text="@string/reminder_location"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:drawableStartCompat="@drawable/ic_location_icon" />
+
+            <TextView
+                android:id="@+id/map_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@{viewModel.reminderLocation}"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:text="Alexandria" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

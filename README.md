@@ -23,7 +23,7 @@
 
 <table>
   <tr>
-    <td><img src="https://user-images.githubusercontent.com/76439620/197573177-a78189f6-b877-4c42-b3cd-1ef7ca01d0e5.PNG" width=223 height 450></td>
+    <td><img src="https://user-images.githubusercontent.com/76439620/197573177-a78189f6-b877-4c42-b3cd-1ef7ca01d0e5.PNG" width=223 height=450></td>
     <td><img src="https://user-images.githubusercontent.com/76439620/197573208-1ab65c1d-87b2-4ddb-8ba4-45b3015787c8.PNG" width=223 height=450></td>
     <td><img src="https://user-images.githubusercontent.com/76439620/197573224-3b804ab9-7d1f-4f16-a112-4c94f5d88abc.PNG" width=223 height=450></td>
    <td><img src="https://user-images.githubusercontent.com/76439620/197573237-eecd1629-78d8-40ab-83e6-8c5c2e409ecf.PNG" width=223 height=450></td>
